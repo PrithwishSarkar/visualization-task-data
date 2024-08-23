@@ -8,7 +8,7 @@ export default function FetchData(uri) {
     useEffect(() => {
         const getData = async () => {
             try {
-                const res = await axios.get(`http://localhost:5000/api/${uri}`);
+                const res = await axios.get(`https://visualization-task-data.vercel.app/api/${uri}`);
                 setData(res.data);
             } catch (error) {
                 console.error("Error fetching data:", error);
