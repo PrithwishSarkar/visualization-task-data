@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+  background-color: #ffffcc;
+}
+
+#header, #footer{
+  /* background-color: rgba(255, 255, 255, .30); 
+  backdrop-filter: blur(5px); */
+  background-color: #ffffb3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+}
+
+#header{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ 
+  position: sticky;
+  top: 0;
+}
+
+
+.chart{
+  width: 92vw;
+  height: 82vh;
+  margin: 6vh auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: rgba(0,0,0, 0.5) 0px 10px 15px -3px, rgba(0,0,0, 0.5) 0px 4px 6px -2px;
+}
+
+.multichartbox{
+  background-color: #f4f4f4;
+  height: fit-content;
+}
+
+.multichart{
+  
+  display: grid;
+    grid-template-columns: auto auto;
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 300px)); */
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+.small-chart{
+  width: 44vw;
+  height: 60vh;
+  margin: 20px 0 10px 0;
+}
+
+.filter{
+  margin: 10px;
+  font-size: 1rem;
+  
+}
+
+label{
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+select{
+  margin-left: 5px;
+  padding: 0 5px;
+  font-size: 1rem;
+}
+
+.mapchart{
+  position: relative;
+}
+
+.mapchart svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 25px;
+}
+
+@media only screen and (max-width: 850px) {
+  .multichart{
+
+      grid-template-columns: auto;
+
+      grid-gap: 10px;
+  }
+  
+  .small-chart{
+    width: 88vw;
+    margin: 10px 0 10px 0;
+  }
+}
