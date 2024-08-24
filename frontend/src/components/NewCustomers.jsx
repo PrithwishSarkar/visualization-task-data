@@ -44,7 +44,8 @@ export default function NewCustomers() {
     ]
   };
 
-  const chartOptions = ChartDesign("Time", "No. of New Customers", 60);
+  const bottomPadding = window.innerWidth < 850 ? 100 : 60;
+  const chartOptions = ChartDesign("Time", "No. of New Customers", bottomPadding);
 
   return (
     <div className='chart'>

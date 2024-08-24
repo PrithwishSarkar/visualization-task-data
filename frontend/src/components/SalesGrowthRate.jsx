@@ -34,8 +34,8 @@ export default function SalesGrowthRate() {
   const handleYearChange = (event) => {
     setSelectedYear(event.target.value);
   };
-
-  const chartOptions = ChartDesign("Time", "Growth Rate Percentage", 60, ((val) => val + "%"));
+  const bottomPadding = window.innerWidth < 850 ? 80 : 60;
+  const chartOptions = ChartDesign("Time", "Growth Rate Percentage", bottomPadding, ((val) => val + "%"));
 
   return (
     <div className='chart'>

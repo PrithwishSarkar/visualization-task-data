@@ -43,8 +43,8 @@ export default function SalesOverTime() {
       }
     ],
   };
-
-  const chartOptions = ChartDesign("Time", "Sales", 60);
+  const bottomPadding = window.innerWidth < 850 ? 100 : 60;
+  const chartOptions = ChartDesign("Time", "Sales", bottomPadding);
 
   return (
     <div className='chart'>
