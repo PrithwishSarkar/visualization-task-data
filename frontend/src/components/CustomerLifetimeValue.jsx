@@ -20,8 +20,8 @@ export default function CustomerLifetimeValue() {
             }
         ]
     };
-
-    const chartOptions = ChartDesign("Time", "Lifetime Value", 30);
+    const bottomPadding = window.innerWidth < 850 ? 50 : 30;
+    const chartOptions = ChartDesign("Time", "Lifetime Value", bottomPadding);
 
     return (
         <div className='chart'>

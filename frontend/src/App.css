@@ -78,7 +78,6 @@ select {
 
 @media only screen and (max-width: 850px) {
   
-
   .multichart {
     grid-template-columns: auto;
     grid-gap: 10px;
