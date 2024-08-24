@@ -17,7 +17,7 @@ function App() {
       <SalesGrowthRate />
       <NewCustomers />
       <RepeatCustomers />
-      <CustomerDistribution />
+      {/* <CustomerDistribution /> */}
       <CustomerLifetimeValue />
       <Footer />
     </div>

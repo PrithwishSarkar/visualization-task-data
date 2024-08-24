@@ -3,9 +3,8 @@
   background-color: #ffffcc;
 }
 
-#header, #footer{
-  /* background-color: rgba(255, 255, 255, .30); 
-  backdrop-filter: blur(5px); */
+#header,
+#footer {
   background-color: #ffffb3;
   display: flex;
   justify-content: center;
@@ -13,15 +12,13 @@
   height: 8vh;
 }
 
-#header{
+#header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
- 
   position: sticky;
   top: 0;
 }
 
-
-.chart{
+.chart {
   width: 92vw;
   height: 82vh;
   margin: 6vh auto;
@@ -29,51 +26,48 @@
   box-sizing: border-box;
   background-color: white;
   border-radius: 8px;
-  box-shadow: rgba(0,0,0, 0.5) 0px 10px 15px -3px, rgba(0,0,0, 0.5) 0px 4px 6px -2px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 15px -3px, rgba(0, 0, 0, 0.5) 0px 4px 6px -2px;
 }
 
-.multichartbox{
+.multichartbox {
   background-color: #f4f4f4;
   height: fit-content;
 }
 
-.multichart{
-  
+.multichart {
   display: grid;
-    grid-template-columns: auto auto;
-    /* grid-template-columns: repeat(auto-fit, minmax(100px, 300px)); */
-    justify-content: center;
-    grid-gap: 20px;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  grid-gap: 20px;
 }
 
-.small-chart{
+.small-chart {
   width: 44vw;
   height: 60vh;
   margin: 20px 0 10px 0;
 }
 
-.filter{
+.filter {
   margin: 10px;
   font-size: 1rem;
-  
 }
 
-label{
+label {
   margin: 0 10px;
   font-size: 1rem;
 }
 
-select{
+select {
   margin-left: 5px;
   padding: 0 5px;
   font-size: 1rem;
 }
 
-.mapchart{
+.mapchart {
   position: relative;
 }
 
-.mapchart svg{
+.mapchart svg {
   position: absolute;
   top: 0;
   left: 0;
@@ -83,15 +77,18 @@ select{
 }
 
 @media only screen and (max-width: 850px) {
-  .multichart{
-
-      grid-template-columns: auto;
-
-      grid-gap: 10px;
+  .multichart {
+    grid-template-columns: auto;
+    grid-gap: 10px;
   }
-  
-  .small-chart{
+
+  .small-chart {
     width: 88vw;
     margin: 10px 0 10px 0;
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: column;
   }
 }
