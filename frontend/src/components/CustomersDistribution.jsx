@@ -7,7 +7,7 @@ import FetchData from '../utilities/FetchData';
 const geoUrl =
   "https://unpkg.com/world-atlas@2.0.2/countries-110m.json";
 
-const API_KEY = '';
+const API_KEY = process.env.REACT_APP_OPENCAGE_KEY;
 
 export default function CustomerDistribution() {
 

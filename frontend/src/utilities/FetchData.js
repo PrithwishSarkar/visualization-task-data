@@ -4,11 +4,12 @@ import axios from 'axios';
 export default function FetchData(uri) {
 
     const [data, setData] = useState([]);
+    const backendURL = process.env.REACT_APP_SERVER_URL;
 
     useEffect(() => {
         const getData = async () => {
             try {
-                const res = await axios.get(`https://visualization-task-data.vercel.app/api/${uri}`);
+                const res = await axios.get(`${backendURL}/api/${uri}`);
                 setData(res.data);
             } catch (error) {
                 console.error("Error fetching data:", error);
